@@ -1,4 +1,5 @@
 import { Punto } from "./clasePunto";
+import { Triangulo } from "./claseTriangulo"
 
 let punto1: Punto = new Punto(3,9)
 
@@ -26,3 +27,11 @@ console.log(punto3.calcularCuadrante())
 console.log(punto4.calcularCuadrante())
 
 console.log(punto0.calcularMasCercano([punto1,punto2,punto3,punto4]));
+
+let v1: Punto = new Punto(0,0)
+let v2: Punto = new Punto(3,0)
+let v3: Punto = new Punto(0,4)
+
+let triangle: Triangulo = new Triangulo(v1,v2,v3)
+
+console.log(triangle.calcularLongitudLados());
